@@ -28,6 +28,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <link
+        rel="apple-touch-icon"
+        href="/city.png"
+        type="image/<generated>"
+        sizes="<generated>"
+        />
         <Navbar/>
         {children}
       </body>
