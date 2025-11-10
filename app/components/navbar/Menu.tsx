@@ -1,13 +1,13 @@
 // Dropdown.js 
 
 'use client'
-import { JSXElementConstructor, SetStateAction, useState } from 'react';
+import { JSXElementConstructor, SetStateAction, use, useState } from 'react';
 
 import MenuIcon from '../navbar/menu.svg'
 import Cross from '../navbar/cross.svg'
 import Link from 'next/link';
 
-export default function Menu({options}: { options: string[] }) {
+export default function Menu({options}: { options: string[][] }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -28,7 +28,7 @@ export default function Menu({options}: { options: string[] }) {
                     onClick={toggleDropdown}
                 >
                 {isOpen &&(
-                <Cross className='w-30 h-30 transition duration-300 px-5 hover:stroke-csg-red hover:scale-120'/>
+                <Cross className='w-30 h-30 transition duration-300 px-5 stroke-csg-black hover:stroke-csg-red hover:scale-120'/>
                 )}
                 {!isOpen &&(
                 <MenuIcon className='w-30 h-30 transition duration-300 px-5 hover:fill-csg-red hover:scale-120'/>
@@ -39,6 +39,7 @@ export default function Menu({options}: { options: string[] }) {
 
                 {/* Dropdown menu */}
                 {isOpen && (
+
                     <div className="origin-top-left absolute
                                     w-100
                                     bg-white border-b-3 border-csg-red
@@ -48,13 +49,13 @@ export default function Menu({options}: { options: string[] }) {
                             {options.map((option, index) => (
                                 <Link
                                     key={index}
-                                    href={option}
+                                    href={option[1]}
                                     className="block px-4 py-4
                                             text-black
                                             transition duration-300 hover:bg-gray-100 hover:text-2xl text font-bold"
-                                    onClick={() => handleSelect(option)}
+                                    onClick={() => handleSelect(option[1])}
                                 >
-                                    {option}
+                                    {option[0]}
                                 </Link>
                             ))}
                         </div>
