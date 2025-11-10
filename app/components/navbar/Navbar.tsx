@@ -1,5 +1,4 @@
 import react from 'react'
-import Image from 'next/image';
 import Link from 'next/link'
 import CsgrLogoLight from '../images/logos/csgr_logos/csgrLight.svg'
 import Facebook from '../images/logos/socials_logos/facebook.svg'
@@ -11,10 +10,8 @@ import Menu from '../navbar/Menu'
 const Navbar=()=>{
     return (
         <nav className='fixed top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-csg-white'>
-            <Menu options={["competition","sponsors","teams"]} />
-            
-            
-            <Link href="/" className='transition duration-300 hover:scale-120 justify-between'>
+            <Menu options={[["Competition","competition"],["Sponsors","sponsors"],["Seasons","teams"],["Team History","teamHistory"],["Garage","garage"]]} />
+            <Link href="/" className='transition durati"on-300 hover:scale-120 justify-between'>
                 <CsgrLogoLight className='w-40 h-25 '/>
             </Link>
             <ul className='flex'>
