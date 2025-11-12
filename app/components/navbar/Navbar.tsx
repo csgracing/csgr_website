@@ -9,24 +9,28 @@ import Menu from '../navbar/Menu'
 
 const Navbar=()=>{
     return (
-        <nav className='fixed top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-csg-white'>
+        <nav className='fixed sticky top-0 w-full flex shrink-1 items-center justify-between border-b-3 border-csg-red bg-csg-white dark:bg-csg-black'>
             <Menu options={[["Competition","competition"],["Sponsors","sponsors"],["Seasons","teams"],["Team History","teamHistory"],["Garage","garage"]]} />
             <Link href="/" className='transition durati"on-300 hover:scale-120 justify-between'>
-                <CsgrLogoLight className='w-40 h-25 '/>
+                <CsgrLogoLight className='w-40 h-25 dark:fill-csg-white flex'/>
             </Link>
-            <ul className='flex'>
+            <ul className='grid grid-cols-2 px-5'>
+                <ul>
                 <a href='https://www.instagram.com/csg.racing/'>
-                    <Instagram className='w-15 h-15 transition duration-300 hover:fill-csg-red hover:scale-120'/>
+                    <Instagram className='w-15 h-15 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
                 </a>
                 <a href='https://www.tiktok.com/@csg.racing'>
-                    <Tiktok className='w-15 h-15 transition duration-300 hover:fill-csg-red hover:scale-120'/>
+                    <Tiktok className='w-15 h-15 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
                 </a>
-                <a href='https://www.linkedin.com/company/csgracing/'>
-                    <Linkedin className='w-15 h-15 transition duration-300 hover:fill-csg-red hover:scale-120'/>
-                </a>
-                <a href='https://www.facebook.com/profile.php?id=61583516661171'>
-                    <Facebook className='w-15 h-15 transition duration-300 hover:fill-csg-red hover:scale-120'/>
-                </a>
+                </ul>
+                <ul>
+                    <a href='https://www.linkedin.com/company/csgracing/'>
+                        <Linkedin className='w-15 h-15 transition duration-300  dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
+                    </a>
+                    <a href='https://www.facebook.com/profile.php?id=61583516661171'>
+                        <Facebook className='w-15 h-15 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
+                    </a>
+                </ul>
 
             </ul>
 

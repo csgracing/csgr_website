@@ -28,10 +28,10 @@ export default function Menu({options}: { options: string[][] }) {
                     onClick={toggleDropdown}
                 >
                 {isOpen &&(
-                <Cross className='w-30 h-30 transition duration-300 px-5 stroke-csg-black hover:stroke-csg-red hover:scale-120'/>
+                <Cross className='w-28 h-28 transition duration-300 px-5 stroke-csg-black dark:stroke-csg-white hover:stroke-csg-red hover:scale-115'/>
                 )}
                 {!isOpen &&(
-                <MenuIcon className='w-30 h-30 transition duration-300 px-5 hover:fill-csg-red hover:scale-120'/>
+                <MenuIcon className='w-28 h-28 transition duration-300 px-5 dark:fill-csg-white hover:fill-csg-red hover:scale-115'/>
                 )}
                 
                 
@@ -41,8 +41,8 @@ export default function Menu({options}: { options: string[][] }) {
                 {isOpen && (
 
                     <div className="origin-top-left absolute
-                                    w-100
-                                    bg-white border-b-3 border-csg-red
+                                    w-110 md:100
+                                    bg-white dark:bg-csg-black border-b-3 border-r-3  border-csg-red
                                     focus:outline-none
                                     ">
                         <div className="py-1">
@@ -51,8 +51,8 @@ export default function Menu({options}: { options: string[][] }) {
                                     key={index}
                                     href={option[1]}
                                     className="block px-4 py-4
-                                            text-black
-                                            transition duration-300 hover:bg-gray-100 hover:text-2xl text font-bold"
+                                            text-black text-center md:text-left dark:text-csg-white
+                                            transition duration-300 hover:text-2xl text font-bold"
                                     onClick={() => handleSelect(option[1])}
                                 >
                                     {option[0]}
