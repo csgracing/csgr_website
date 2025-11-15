@@ -2,6 +2,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import car from './teams/2025season/images/carimages/car1.jpg'
+import SponsorCarousel from './components/SponsorCarousel';
  
 export const metadata: Metadata = {
   title: 'City St Georges Racing',
@@ -25,6 +26,9 @@ export default function Home() {
             statement 3
           </li>
         </ul>
+      </div>
+      <div className='flex items-center'>
+        <SponsorCarousel/>
       </div>
     </div>
     

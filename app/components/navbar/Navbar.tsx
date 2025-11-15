@@ -17,18 +17,18 @@ const Navbar=()=>{
             <ul className='grid grid-cols-2 px-5'>
                 <ul>
                 <a href='https://www.instagram.com/csg.racing/'>
-                    <Instagram className='w-15 h-15 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
+                    <Instagram className='w-14 h-14 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 <a href='https://www.tiktok.com/@csg.racing'>
-                    <Tiktok className='w-15 h-15 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
+                    <Tiktok className='w-14 h-14 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 </ul>
                 <ul>
                     <a href='https://www.linkedin.com/company/csgracing/'>
-                        <Linkedin className='w-15 h-15 transition duration-300  dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
+                        <Linkedin className='w-14 h-14 transition duration-300  dark:fill-csg-white hover:fill-csg-red hover:scale-115'/>
                     </a>
                     <a href='https://www.facebook.com/profile.php?id=61583516661171'>
-                        <Facebook className='w-15 h-15 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-120'/>
+                        <Facebook className='w-14 h-14 transition duration-300 dark:fill-csg-white hover:fill-csg-red hover:scale-115'/>
                     </a>
                 </ul>
 
