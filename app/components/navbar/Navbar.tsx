@@ -5,11 +5,11 @@ import Facebook from '../images/logos/socials_logos/facebook.svg'
 import Instagram from '../images/logos/socials_logos/instagram.svg'
 import Tiktok from '../images/logos/socials_logos/tiktok.svg'
 import Linkedin from '../images/logos/socials_logos/linkedin.svg'
-import Menu from '../navbar/Menu'
+import Menu from './Menu'
 
 const Navbar=()=>{
     return (
-        <nav className='fixed sticky top-0 w-full flex shrink-1 items-center justify-between border-b-3 border-csg-red bg-csg-white dark:bg-csg-black'>
+        <nav className='sticky top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-csg-white dark:bg-csg-black'>
             <Menu options={[["Competition","competition"],["Sponsors","sponsors"],["Seasons","teams"],["Team History","teamHistory"],["Garage","garage"]]} />
             <Link href="/" className='transition durati"on-300 hover:scale-120 justify-between'>
                 <CsgrLogoLight className='w-40 h-25 dark:fill-csg-white flex'/>
@@ -32,10 +32,7 @@ const Navbar=()=>{
                     </a>
                 </ul>
 
-            </ul>
-
-
-  
+            </ul>  
         </nav>
     )
 }
