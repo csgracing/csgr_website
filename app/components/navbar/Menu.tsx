@@ -50,9 +50,9 @@ export default function Menu({options}: { options: string[][] }) {
                                 <Link
                                     key={index}
                                     href={option[1]}
-                                    className="block px-4 py-4
+                                    className="flex px-4 py-4 -z-1
                                             text-black text-center md:text-left dark:text-csg-white
-                                            transition duration-300 hover:text-2xl text font-bold"
+                                            transition duration-300 hover:text-2xl text font-bold justify-center md:justify-start"
                                     onClick={() => handleSelect(option[1])}
                                 >
                                     {option[0]}

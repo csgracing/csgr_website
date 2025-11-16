@@ -9,7 +9,7 @@ import Menu from './Menu'
 
 const Navbar=()=>{
     return (
-        <nav className='sticky top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-csg-white dark:bg-csg-black'>
+        <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-csg-white dark:bg-csg-black'>
             <Menu options={[["Competition","competition"],["Sponsors","sponsors"],["Seasons","teams"],["Team History","teamHistory"],["Garage","garage"]]} />
             <Link href="/" className='transition durati"on-300 hover:scale-120 justify-between'>
                 <CsgrLogoLight className='w-40 h-25 dark:fill-csg-white flex'/>
