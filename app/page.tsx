@@ -1,7 +1,9 @@
 
 import type { Metadata } from 'next'
 import SponsorCarousel from './components/SponsorCarousel/SponsorCarousel';
+import Image from 'next/image';
 import Link from 'next/link';
+import Graph from './Graph.png'
  
 export const metadata: Metadata = {
   title: 'City St Georges Racing',
@@ -29,6 +31,15 @@ export default function Home() {
         </ul>
       </div>
         <SponsorCarousel/>
+      <div className='flex py-2 gap-5'>
+        <Image src={Graph} alt="" height={600} width={600} className='bg-csg-light-gray border-3 border-csg-red rounded-2xl'/>
+     <ul className=''>
+      <h1 className='text-3xl text-csg-red font-mono font-extrabold'>About the competition</h1>
+      <a href="https://www.imeche.org/events/formula-student" className='justify-center flex mt-5'>
+        <p className='bg-csg-light-gray border-3 border-csg-red inline  rounded-lg text-center text-xl'>learn more</p>
+      </a>
+     </ul>
+     </div>
     </div>
     
   );
