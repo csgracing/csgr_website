@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {SponsorCarouselLogos} from '../images/logos/logos'
 
 
@@ -6,7 +7,7 @@ import {SponsorCarouselLogos} from '../images/logos/logos'
 
 function SponsorCarousel() {
   return (
-      <div className="overflow-hidden whitespace-nowrap border-csg-red border-t-4 border-b-4 text-center py-5">
+      <div className="overflow-hidden whitespace-nowrap bg-csg-white dark:bg-csg-black border-csg-red border-t-4 border-b-4 text-center py-5">
         <h1 className='font-bold text-xl'>Our Sponsors</h1>
         <div className='flex z-0'>
           <div className="logos-slide">
@@ -38,7 +39,9 @@ function SponsorCarousel() {
             </div>
           </div>
         </div>
-        <p className='text-csg-dark-gray text-sm'>Click to learn more</p>
+        <Link href="/sponsors">
+          <p className='text-csg-dark-gray text-sm'>Click to learn more</p>
+        </Link>
       </div>
   );
 }
