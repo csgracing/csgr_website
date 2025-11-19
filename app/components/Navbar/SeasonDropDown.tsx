@@ -1,3 +1,4 @@
+'use client';
 import {SetStateAction,useState } from 'react';
 import DropDownArrow from './dropdownArrow.svg';
 import Link from 'next/link';
@@ -28,7 +29,7 @@ export default function Menu() {
                 <Link href="/teams/2026season" 
                 className="flex px-4
                          text-black dark:text-csg-white
-                           transition duration-300 hover:text-2xl">
+                           transition duration-300 hover:not-md:text-2xl hover:md:underline decoration-csg-red underline-offset-4">
                            Season'26
                 </Link>
                 <button
@@ -48,8 +49,8 @@ export default function Menu() {
                 {/* Dropdown menu */}
                 {isOpen && (
 
-                    <div className="origin-bottom-left relative
-                                    w-110 md:100
+                    <div className="origin-bottom-left relative md:absolute
+                                    w-110 md:w-45
                                     bg-white dark:bg-csg-black border-b-3 rounded-xl border-3  border-csg-red
                                     focus:outline-none
                                     ">

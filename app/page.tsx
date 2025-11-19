@@ -31,7 +31,7 @@ export default function Home() {
         </ul>
       </div>
         <SponsorCarousel/>
-      <div className='flex py-2 gap-5'>
+      <div className='md:flex py-2 gap-5'>
         <Image src={Graph} alt="" height={600} width={600} className='bg-csg-light-gray border-3 border-csg-red rounded-2xl'/>
      <ul className=''>
       <h1 className='text-3xl text-csg-red font-mono font-extrabold'>About the competition</h1>

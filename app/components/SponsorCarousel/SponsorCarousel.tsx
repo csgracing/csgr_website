@@ -39,9 +39,11 @@ function SponsorCarousel() {
             </div>
           </div>
         </div>
+        {process.env.NODE_ENV === "development"&&(
         <Link href="/sponsors">
           <p className='text-csg-dark-gray text-sm'>Click to learn more</p>
         </Link>
+        )}
       </div>
   );
 }
