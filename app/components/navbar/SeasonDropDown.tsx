@@ -26,9 +26,9 @@ export default function Menu() {
             <div className="sticky flex text-center justify-center items-center md:justify-start md:text-left text-lg font-bold">
                 {/* Dropdown button */}
                 <Link href="/teams/2026season" 
-                className="flex px-4 -z-1
-                         text-black text-center md:text-left dark:text-csg-white
-                           transition duration-300 hover:text-2xl font-bold justify-center md:justify-start">
+                className="flex px-4
+                         text-black dark:text-csg-white
+                           transition duration-300 hover:text-2xl">
                            Season'26
                 </Link>
                 <button
@@ -58,7 +58,7 @@ export default function Menu() {
                             <div key={index}>
                                 <Link
                                     href={season[1]}
-                                    className="flex px-4 -z-1
+                                    className="flex px-4
                                             text-black text-center md:text-left dark:text-csg-white
                                             transition duration-300 hover:text-2xl text font-bold justify-center md:justify-start"
                                     onClick={() => handleSelect(season[1])}
