@@ -24,7 +24,7 @@ const Navbar=()=>{
                         <Menu/>
                 </div>
             )}
-            <Link href="/" className='transition duration-300 hover:scale-120 justify-between'>
+            <Link href="/" className='transition duration-300 hover:scale-120'>
                 <CsgrLogoLight className='w-40 h-25 dark:fill-csg-white flex'/>
             </Link>
             {/*desktop menu*/}

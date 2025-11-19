@@ -50,9 +50,9 @@ export default function Menu() {
                 {/* Dropdown menu */}
                 {isOpen && (
 
-                    <div className="origin-top-left absolute
-                                    w-110 md:100
-                                    bg-white dark:bg-csg-black border-b-3 rounded-b-xl border-r-3  border-csg-red
+                    <div className="top-left absolute
+                                    w-screen md:100
+                                    bg-white dark:bg-csg-black border-b-3 rounded-xl border-3  border-csg-red
                                     focus:outline-none
                                     ">
                         <div className="py-1">
