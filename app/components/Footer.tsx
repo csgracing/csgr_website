@@ -14,10 +14,12 @@ const Footer = () => {
             
                 
             <ul className='space-y-2'>
-            <h3 className=' underline underline-offset-3 font-semibold'>Contact form to be placed here</h3>
-            <li>
-            <p><a href="mailto:&#099;&#097;&#108;&#117;&#109;&#098;&#114;&#101;&#101;&#110;&#099;&#104;&#097;&#112;&#109;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Send email</a></p>
-            </li>
+            <h3 className=' underline underline-offset-3 font-semibold'>Contact Us</h3>
+            <div className='flex'>
+                <a href="mailTo:&#116;&#101;&#097;&#109;&#064;&#099;&#115;&#103;&#046;&#114;&#097;&#099;&#105;&#110;&#103;" className=' justify-center flex'>
+                    <p className='p-1 align-center bg-csg-light-gray border-3 border-csg-red inline  rounded-lg text-center text-xl transition duration 300 hover:scale-120'>Send the team an email</p>
+                </a>
+            </div>
             </ul>
             <ul className='grid grid-cols-1 md:grid-cols-2'>
                 <ul>
