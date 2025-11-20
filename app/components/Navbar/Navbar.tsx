@@ -9,7 +9,7 @@ const Navbar=()=>{
         
         <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-csg-white dark:bg-csg-black'>
             {process.env.NODE_ENV === "development"&&(<Menu/>)}
-            <Link href="/" className='transition durati"on-300 hover:scale-120 justify-between'>
+            <Link href="/" className='transition duration-300 hover:scale-120 justify-between'>
                 <CsgrLogoLight className='w-40 h-25 dark:fill-csg-white flex'/>
             </Link>
             <ul className='grid grid-cols-2 px-5'>
