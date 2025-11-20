@@ -38,10 +38,10 @@ export default function Menu() {
                     onClick={toggleDropdown}
                 >
                 {isOpen &&(
-                <DropDownArrow className='w-15 stroke-csg-red fill-csg-red rotate-180'/>
+                <DropDownArrow className='w-15 stroke-csg-red fill-white dark:fill-black rotate-180'/>
                 )}
                 {!isOpen &&(
-                <DropDownArrow className='h-15 stroke-csg-red fill-csg-red'/>
+                <DropDownArrow className='h-15 stroke-csg-red fill-white dark:fill-black'/>
                 )}
                 </button>
                 </div>

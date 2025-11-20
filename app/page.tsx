@@ -27,10 +27,14 @@ export default function Home() {
               <li>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
               </li>
+              
             </ul>
         </ul>
       </div>
-      <SponsorCarousel/>
+      <div className='py-2 text-center bg-black border-csg-red border-t-4 border-b-4'>
+      <h1 className='text-3xl text-csg-red font-mono font-extrabold'>Check Us Out On Instagram <a href='https://www.instagram.com/csg.racing/' className="hover:underline decoration-csg-red">@csg.racing</a></h1>
+      <iframe src="https://widget.taggbox.com/308607?website=1" className="w-full h-70"/>
+      </div>
     <div className='md:flex py-4 mx-4 gap-5'>   
       <ul className='text-lg'>
         <h1 className='text-3xl text-csg-red font-mono font-extrabold'>About the competition</h1>
@@ -51,6 +55,9 @@ export default function Home() {
       </ul>
       <Image src={Graph} alt="" height={800} width={800} className='bg-black border-5 border-csg-red rounded-2xl'/>
      </div>   
+     <div>
+      <SponsorCarousel/>
+      </div>
     </div>
     
   );
