@@ -40,10 +40,10 @@ export default function Menu() {
                     onClick={toggleDropdown}
                 >
                 {isOpen &&(
-                <Cross className='w-28 h-28 transition duration-300 px-5 stroke-csg-black dark:stroke-csg-white hover:stroke-csg-red hover:scale-115'/>
+                <Cross className='w-28 h-28 transition duration-300 px-5 stroke-black dark:stroke-white hover:stroke-csg-red hover:scale-115'/>
                 )}
                 {!isOpen &&(
-                <MenuIcon className='w-28 h-28 transition duration-300 px-5 dark:fill-csg-white hover:fill-csg-red hover:scale-115'/>
+                <MenuIcon className='w-28 h-28 transition duration-300 px-5 dark:fill-white hover:fill-csg-red hover:scale-115'/>
                 )}
                 </button>
 
@@ -52,7 +52,7 @@ export default function Menu() {
 
                     <div className="top-left absolute
                                     w-screen md:100
-                                    bg-white dark:bg-csg-black border-b-3 rounded-xl border-3  border-csg-red
+                                    bg-white dark:bg-black border-b-3 rounded-xl border-3  border-csg-red
                                     focus:outline-none
                                     ">
                         <div className="py-1">
@@ -62,7 +62,7 @@ export default function Menu() {
                                 <Link
                                     href={option[1]}
                                     className="
-                                            flex px-4 py-4 text-black text-center md:text-left dark:text-csg-white
+                                            flex px-4 py-4 text-black text-center md:text-left dark:text-white
                                             transition duration-300 hover:text-2xl font-bold justify-center md:justify-start"
                                     onClick={() => handleSelect(option[1])}
                                     

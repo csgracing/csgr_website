@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #cfcfcf;
+  --background: #ebebeb;
   --foreground: #000000;
 }
 
@@ -12,11 +12,9 @@
   --font-mono: var(--font-geist-mono);
       /* CSG Racing Color Palette */
     --color-csg-burgundy: #3C0403;
-    --color-csg-black: #000000;
     --color-csg-light-gray: #7D7C7C;
     --color-csg-dark-gray:#434343;
     --color-csg-red: #D00000;
-    --color-csg-white: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {

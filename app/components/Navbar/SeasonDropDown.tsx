@@ -27,8 +27,8 @@ export default function Menu() {
             <div className="sticky flex text-center justify-center items-center md:justify-start md:text-left text-lg font-bold">
                 {/* Dropdown button */}
                 <Link href="/teams/2026season" 
-                className="flex px-4
-                         text-black dark:text-csg-white
+                className="flex px-4 pb-1
+                         text-black dark:text-white
                            transition duration-300 hover:not-md:text-2xl hover:md:underline decoration-csg-red underline-offset-4">
                            Season'26
                 </Link>
@@ -51,7 +51,7 @@ export default function Menu() {
 
                     <div className="origin-bottom-left relative md:absolute
                                     w-110 md:w-45
-                                    bg-white dark:bg-csg-black border-b-3 rounded-xl border-3  border-csg-red
+                                    bg-white dark:bg-black border-b-3 rounded-xl border-3  border-csg-red
                                     focus:outline-none
                                     ">
                         <div className="">
@@ -60,7 +60,7 @@ export default function Menu() {
                                 <Link
                                     href={season[1]}
                                     className="flex px-4
-                                            text-black text-center md:text-left dark:text-csg-white
+                                            text-black text-center md:text-left dark:text-white
                                             transition duration-300 hover:text-2xl text font-bold justify-center md:justify-start"
                                     onClick={() => handleSelect(season[1])}
                                 >
