@@ -41,7 +41,6 @@ const Footer = () => {
             {/* Footer Bottom */}
             <div className="items-center text-center text-csg-dark-gray mt-2">
                City St Georges Racing 2025<br/>
-               Designed by Sabrina Ahmud Developed by Calum Breen-Chapman
             </div>
         </footer>
     );
