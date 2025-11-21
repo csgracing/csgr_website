@@ -17,7 +17,7 @@ const Navbar=()=>{
         ["Contact Us","/contactUs"],
     ];
     return (
-        <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 font-aharoni border-csg-red bg-white dark:bg-black'>
+        <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-white dark:bg-black uppercase'>
             {/*mobile menu*/}
             {process.env.NODE_ENV === "development"&&(
                 <div className='md:hidden'>
@@ -38,7 +38,7 @@ const Navbar=()=>{
                                 <Link
                                     href={option[1]}
                                     className="
-                                            flex px-4 py-4 text-black text-center md:text-left text-xl dark:text-white
+                                            flex px-4 py-4 text-black text-center md:text-left text-lg dark:text-white
                                             transition duration-300 hover:underline decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
                                     
                                 > 
@@ -57,35 +57,35 @@ const Navbar=()=>{
             <ul className='flex gap-2 not-md:hidden mx-5'>
                 {/*desktop socials*/}
                 <a href='https://www.instagram.com/csg.racing/'>
-                    <InstaLogo className='w-14 h-14 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                    <InstaLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 <a href='https://www.tiktok.com/@csg.racing'>
-                    <TiktokLogo className='w-14 h-14 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                    <TiktokLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 <a href='https://www.linkedin.com/company/csgracing/'>
-                        <LinkedinLogo className='w-14 h-14 transition duration-300  dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                    <LinkedinLogo className='w-12 h-12 transition duration-300  dark:fill-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 <a href='https://www.facebook.com/profile.php?id=61583516661171'>
-                        <FacebookLogo className='w-14 h-14 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                    <FacebookLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 </ul>
 
                 {/*mobile socials*/}
-                <ul className='grid grid-cols-2 px-5 md:hidden'>
+                <ul className='grid grid-cols-2 px-5 gap-1 md:hidden'>
                 <ul>
                 <a href='https://www.instagram.com/csg.racing/'>
-                    <InstaLogo className='w-14 h-14 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                    <InstaLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 <a href='https://www.tiktok.com/@csg.racing'>
-                    <TiktokLogo className='w-14 h-14 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                    <TiktokLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
                 </a>
                 </ul>
                 <ul>
                     <a href='https://www.linkedin.com/company/csgracing/'>
-                        <LinkedinLogo className='w-14 h-14 transition duration-300  dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                        <LinkedinLogo className='w-12 h-12 transition duration-300  dark:fill-white hover:fill-csg-red hover:scale-115'/>
                     </a>
                     <a href='https://www.facebook.com/profile.php?id=61583516661171'>
-                        <FacebookLogo className='w-14 h-14 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
+                        <FacebookLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
                     </a>
                 </ul>
             </ul>  

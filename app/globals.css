@@ -33,7 +33,7 @@ body {
 }
 
 .logos-slide {
-  animation: 10s slide infinite linear;
+  animation: 12s slide infinite linear;
 }
 
 @keyframes slide {

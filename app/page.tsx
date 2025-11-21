@@ -19,21 +19,21 @@ export default function Home() {
             <h1 className='text-3xl text-csg-red font-mono font-extrabold'>City St Georges Racing Driving Innovation</h1>
             <ul className='list-disc text-lg mx-6'>
               <li>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-              </li>
+                City St George’s Racing involves students from various disciplines across City St George’s University of London, to build a single seater car and compete in the annual competition, Formula Student UK held at Silverstone, one of the most famous race tracks in the world.</li>
+              <br/>
               <li>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-              </li>
+                CSG Racing is working towards developing an electric vehicle for formula student UK. In 2025 we reentered the competition through the concept class, building the foundations for future years.</li>
+              <br/>
               <li>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+                Our ambition is to enter the EV category for static and dynamic events, and while a completed car is still in progress, our focus is on creating a design and development pathway that can deliver long-term success.
               </li>
               
             </ul>
         </ul>
       </div>
       <div className='py-2 text-center bg-black border-csg-red border-t-4 border-b-4'>
-      <h1 className='text-3xl text-csg-red font-mono font-extrabold'>Check Us Out On Instagram <a href='https://www.instagram.com/csg.racing/' className="hover:underline decoration-csg-red">@csg.racing</a></h1>
-      <iframe src="https://widget.taggbox.com/308607?website=1" className="w-full h-70"/>
+      <h1 className='text-3xl text-csg-red font-mono font-extrabold'>Check Us Out On Instagram <a href='https://www.instagram.com/csg.racing/' className="hover:underline text-blue-600 text-4xl">@csg.racing</a></h1>
+      <iframe src="https://widget.taggbox.com/308607?website=1" className="w-full h-130 md:h-70"/>
       </div>
     <div className='md:flex py-4 mx-4 gap-5'>   
       <ul className='text-lg'>

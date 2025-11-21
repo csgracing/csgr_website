@@ -41,7 +41,7 @@ function SponsorCarousel() {
             <div className="flex items-center justify-center-3 md:gap-x-2">
               {SponsorCarouselLogos.map((Logo,index) => (
                 <a href={Logo.link} key={index} target="_blank" rel="noopener noreferrer">
-                  <Logo.src className='w-auto h-20 md:h-30 fill-black dark:fill-white'/>
+                  <Logo.src className='w-1/8 h-20 md:h-30 fill-black dark:fill-white'/>
                 </a>
               ))}
             </div>
