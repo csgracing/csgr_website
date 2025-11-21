@@ -20,7 +20,7 @@ const Navbar=()=>{
         <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-white dark:bg-black uppercase'>
             {/*mobile menu*/}
             {process.env.NODE_ENV === "development"&&(
-                <div className='md:hidden'>
+                <div className='xl:hidden'>
                         <Menu/>
                 </div>
             )}
@@ -30,7 +30,7 @@ const Navbar=()=>{
             {/*desktop menu*/}
             {process.env.NODE_ENV === "development"&&(
             
-            <div className='flex gap-1 not-md:hidden'>
+            <div className='flex gap-1 not-xl:hidden'>
                 
                 {options.map((option,index) => (
                             <div className='' key={index}>
@@ -54,7 +54,7 @@ const Navbar=()=>{
                             ))}
             </div>
         )}
-            <ul className='flex gap-2 not-md:hidden mx-5'>
+            <ul className='flex gap-2 not-2xl:hidden mx-5'>
                 {/*desktop socials*/}
                 <a href='https://www.instagram.com/csg.racing/'>
                     <InstaLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>
@@ -71,7 +71,7 @@ const Navbar=()=>{
                 </ul>
 
                 {/*mobile socials*/}
-                <ul className='grid grid-cols-2 px-5 gap-1 md:hidden'>
+                <ul className='grid grid-cols-2 px-5 gap-1 2xl:hidden'>
                 <ul>
                 <a href='https://www.instagram.com/csg.racing/'>
                     <InstaLogo className='w-12 h-12 transition duration-300 dark:fill-white hover:fill-csg-red hover:scale-115'/>

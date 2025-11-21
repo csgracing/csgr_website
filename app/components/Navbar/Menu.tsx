@@ -3,7 +3,7 @@
 import { SetStateAction, useState } from 'react';
 
 import MenuIcon from './menu.svg'
-import Cross from './menu.svg'
+import Cross from './cross.svg'
 import SeasonDropDown from './SeasonDropDown';
 import Link from 'next/link';
 

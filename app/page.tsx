@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-      <div className='md:flex gap-20 py-2'>
-          <iframe className='aspect-video w-full md:w-1/2 'src="https://www.youtube.com/embed/50RhVl2hXdg?si=BZW6Ixk2Ax2tJvSC&amp&autoplay=1&mute=1&controls=1&loop=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <div className='lg:flex gap-20 py-2'>
+          <iframe className='aspect-video w-full lg:w-1/2 'src="https://www.youtube.com/embed/50RhVl2hXdg?si=BZW6Ixk2Ax2tJvSC&amp&autoplay=1&mute=1&controls=1&loop=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           <ul className='py-5 mx-4'>
             <h1 className='text-3xl text-csg-red font-mono font-extrabold'>City St Georges Racing Driving Innovation</h1>
             <ul className='list-disc text-lg mx-6'>
@@ -35,7 +35,7 @@ export default function Home() {
       <h1 className='text-3xl text-csg-red font-mono font-extrabold'>Check Us Out On Instagram <a href='https://www.instagram.com/csg.racing/' className="hover:underline text-blue-600 text-4xl">@csg.racing</a></h1>
       <iframe src="https://widget.taggbox.com/308607?website=1" className="w-full h-130 md:h-70"/>
       </div>
-    <div className='md:flex py-4 mx-4 gap-5'>   
+    <div className='xl:flex py-4 mx-4 gap-5'>   
       <ul className='text-lg'>
         <h1 className='text-3xl text-csg-red font-mono font-extrabold'>About the competition</h1>
         <li>
@@ -49,11 +49,11 @@ export default function Home() {
         <br/>
         <div className='justify-center flex'>
           <a href="https://www.imeche.org/events/formula-student" className='justify-center flex m-5'>
-            <p className='p-2 align-center bg-csg-red  inline text-white rounded-lg text-center text-xl transition duration 300 hover:scale-120'>Learn More</p>
+            <p className='p-2 align-center bg-csg-red inline text-white rounded-lg text-center text-xl transition duration 300 hover:scale-120'>Learn More</p>
           </a>
         </div>
       </ul>
-      <Image src={Graph} alt="" height={800} width={800} className='bg-black border-5 border-csg-red rounded-2xl'/>
+      <Image src={Graph} alt="" height={800} width={800} className='bg-white border-5 w-full xl:w-1/2 object-scale-down  border-csg-red rounded-2xl'/>
      </div>   
      <div>
       <SponsorCarousel/>
