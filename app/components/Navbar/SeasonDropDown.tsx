@@ -22,14 +22,14 @@ export default function Menu() {
     
 
     return (
-        <div >
+        <div className=''>
             <div>
             <div className="sticky flex text-center justify-center items-center md:justify-start md:text-left text-lg font-bold">
                 {/* Dropdown button */}
                 <Link href="/teams/2026season" 
-                className="flex px-4 pb-1
+                className="flex px-4
                          text-black dark:text-white
-                           transition duration-300 hover:not-md:text-2xl hover:md:underline decoration-csg-red underline-offset-4">
+                           transition duration-300 hover:not-md:text-2xl md:text-xl hover:md:underline decoration-csg-red underline-offset-4">
                            Season'26
                 </Link>
                 <button
@@ -50,7 +50,7 @@ export default function Menu() {
                 {isOpen && (
 
                     <div className="origin-bottom-left relative md:absolute
-                                    w-110 md:w-45
+                                    w-full md:w-45
                                     bg-white dark:bg-black border-b-3 rounded-xl border-3  border-csg-red
                                     focus:outline-none
                                     ">
@@ -61,7 +61,7 @@ export default function Menu() {
                                     href={season[1]}
                                     className="flex px-4
                                             text-black text-center md:text-left dark:text-white
-                                            transition duration-300 hover:text-2xl text font-bold justify-center md:justify-start"
+                                            transition duration-300 hover:text-2xl font-bold text-lg justify-center md:justify-start"
                                     onClick={() => handleSelect(season[1])}
                                 >
                                     {season[0]}

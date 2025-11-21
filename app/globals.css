@@ -1,4 +1,6 @@
+@import url(https://db.onlinewebfonts.com/c/22db60d19480ba0274c9eb6ba877ea9b?family=Aharoni+Bold+V1);
 @import "tailwindcss";
+
 
 :root {
   --background: #ebebeb;
@@ -42,4 +44,8 @@ body {
   to{
     transform: translateX(-100%);
   }
+}
+
+.font-aharoni{
+  font-family: "Aharoni Bold V1";
 }

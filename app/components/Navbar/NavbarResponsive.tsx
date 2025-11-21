@@ -17,7 +17,7 @@ const Navbar=()=>{
         ["Contact Us","/contactUs"],
     ];
     return (
-        <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-white dark:bg-black'>
+        <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 font-aharoni border-csg-red bg-white dark:bg-black'>
             {/*mobile menu*/}
             {process.env.NODE_ENV === "development"&&(
                 <div className='md:hidden'>
@@ -38,7 +38,7 @@ const Navbar=()=>{
                                 <Link
                                     href={option[1]}
                                     className="
-                                            flex px-4 py-4 text-black text-center md:text-left dark:text-white
+                                            flex px-4 py-4 text-black text-center md:text-left text-xl dark:text-white
                                             transition duration-300 hover:underline decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
                                     
                                 > 
