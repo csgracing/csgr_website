@@ -2,8 +2,8 @@
 'use client'
 import { SetStateAction, useState } from 'react';
 
-import MenuIcon from '../navbar/menu.svg'
-import Cross from '../navbar/cross.svg'
+import MenuIcon from './menu.svg'
+import Cross from './menu.svg'
 import SeasonDropDown from './SeasonDropDown';
 import Link from 'next/link';
 
