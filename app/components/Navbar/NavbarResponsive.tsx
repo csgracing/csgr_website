@@ -19,7 +19,7 @@ const Navbar=()=>{
     return (
         <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-white dark:bg-black uppercase'>
             {/*mobile menu*/}
-            {process.env.NODE_ENV === "development"&&(
+            {process.env.NODE_ENV === "development"||process.env.NODE_ENV === "test"&&(
                 <div className='xl:hidden'>
                         <Menu/>
                 </div>
@@ -28,7 +28,7 @@ const Navbar=()=>{
                 <CsgrLogoLight className='w-40 h-25 mx-5 dark:fill-white flex'/>
             </Link>
             {/*desktop menu*/}
-            {process.env.NODE_ENV === "development"&&(
+            {process.env.NODE_ENV === "development"||process.env.NODE_ENV === "test"&&(
             
             <div className='flex gap-1 not-xl:hidden'>
                 

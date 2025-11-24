@@ -47,7 +47,7 @@ function SponsorCarousel() {
             </div>
           </div>
         </div>
-        {process.env.NODE_ENV === "development"&&(
+        {process.env.NODE_ENV === "development"||process.env.NODE_ENV === "test"&&(
         <Link href="/sponsors">
           <p className='text-csg-dark-gray text-sm'>Click to learn more</p>
         </Link>
