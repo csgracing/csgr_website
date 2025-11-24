@@ -51,8 +51,8 @@ export default function Menu() {
                 {isOpen && (
 
                     <div className="top-left absolute
-                                    w-screen md:100
-                                    bg-white dark:bg-black border-b-3 rounded-xl border-3  border-csg-red
+                                    w-screen h-screen sm:w-100
+                                    bg-white dark:bg-black border-t-3 sm:rounded-xl sm:border-3 border-csg-red
                                     focus:outline-none
                                     ">
                         <div className="py-1">
@@ -62,8 +62,8 @@ export default function Menu() {
                                 <Link
                                     href={option[1]}
                                     className="
-                                            flex px-4 py-4 text-black text-center md:text-left dark:text-white
-                                            transition duration-300 hover:text-2xl font-bold justify-center md:justify-start"
+                                            flex px-4 py-4 text-black text-center sm:text-left dark:text-white
+                                            transition duration-300 hover:text-2xl font-bold justify-center sm:justify-start"
                                     onClick={() => handleSelect(option[1])}
                                     
                                 > 

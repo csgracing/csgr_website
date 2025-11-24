@@ -24,7 +24,7 @@ export default function Menu() {
     return (
         <div className=''>
             <div>
-            <div className="sticky flex text-center justify-center items-center md:justify-start md:text-left text-lg font-bold">
+            <div className="sticky flex text-center justify-center items-center sm:justify-start sm:text-left text-lg font-bold">
                 {/* Dropdown button */}
                 <Link href="/teams/2026season" 
                 className="flex px-4

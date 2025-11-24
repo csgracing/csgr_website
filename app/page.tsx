@@ -31,7 +31,7 @@ export default function Home() {
             </ul>
         </ul>
       </div>
-      <div className='py-2 text-center bg-black border-csg-red border-t-4 border-b-4'>
+      <div className='py-2 text-center bg-white dark:bg-black border-csg-red border-t-4 border-b-4'>
       <h1 className='text-3xl text-csg-red font-mono font-extrabold'>Check Us Out On Instagram <a href='https://www.instagram.com/csg.racing/' className="hover:underline text-blue-600 text-4xl">@csg.racing</a></h1>
       <iframe src="https://widget.taggbox.com/308607?website=1" className="w-full h-130 md:h-70"/>
       </div>
