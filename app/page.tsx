@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <div className='lg:flex gap-20 py-2'>
           <iframe className='aspect-video w-full lg:w-1/2 'src="https://www.youtube.com/embed/50RhVl2hXdg?si=BZW6Ixk2Ax2tJvSC&amp&autoplay=1&mute=1&controls=1&loop=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          <ul className='py-5 mx-4'>
+          <ul className='py-5 mx-4 lg:w-1/2'>
             <h1 className='text-3xl text-csg-red font-mono font-extrabold'>City St Georges Racing Driving Innovation</h1>
             <ul className='list-disc text-lg mx-6'>
               <li>
@@ -36,7 +36,7 @@ export default function Home() {
       <iframe src="https://widget.taggbox.com/308607?website=1" className="w-full h-130 md:h-70"/>
       </div>
     <div className='xl:flex py-4 mx-4 gap-5'>   
-      <ul className='text-lg'>
+      <ul className='text-lg xl:w-1/2'>
         <h1 className='text-3xl text-csg-red font-mono font-extrabold'>About the competition</h1>
         <li>
           Formula Student UK is an annual engineering competition run by the Institution of Mechanical Engineers (IMechE), where student teams design, build, and race their own prototype single-seater cars. The event combines static events including engineering design, cost and manufacturing analysis, and a business presentation with dynamic events such as acceleration, skid-pad, autocross, and a long-distance endurance race.        </li>
@@ -53,7 +53,7 @@ export default function Home() {
           </a>
         </div>
       </ul>
-      <Image src={Graph} alt="" height={800} width={800} className='bg-white border-5 w-full xl:w-1/2 object-scale-down  border-csg-red rounded-2xl'/>
+      <Image src={Graph} alt="" height={800} width={800} className='bg-white aspect-video border-5 w-full xl:w-1/2 object-scale-down  border-csg-red rounded-2xl'/>
      </div>   
      <div>
       <SponsorCarousel/>
