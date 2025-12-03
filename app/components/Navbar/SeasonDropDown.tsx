@@ -29,8 +29,8 @@ export default function Menu() {
                 <Link href="/teams/2026season" 
                 className="flex px-4 py-4
                          text-black dark:text-white
-                           transition duration-300 hover:not-xl:text-2xl md:text-lg  hover:text-csg-red decoration-csg-red underline-offset-4">
-                           <span className='not-xl:hidden link-underline link-underline-csg-red'>Season'26</span>
+                           transition duration-300 hover:not-xl:text-2xl md:text-lg not-xl:hover:text-csg-red decoration-csg-red underline-offset-4">
+                           <span className='not-xl:hidden link-underline link-underline-csg-red px-1'>Season'26</span>
                            <span className='xl:hidden'>Season'26</span>
                 </Link>
                 <button

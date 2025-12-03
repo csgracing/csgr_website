@@ -49,10 +49,10 @@ body {
 .link-underline {
         border-bottom-width: 0;
         background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-        background-size: 0 1px;
-        background-position: 0 100%;
+        background-size: 0px 3px;
+        background-position: 50% 100%;
         background-repeat: no-repeat;
-        transition: background-size .3s ease-in-out;
+        transition:  .3s ease-in-out;
     }
 
     .link-underline-csg-red {
@@ -61,7 +61,7 @@ body {
 
     .link-underline:hover {
         background-size: 100% 3px;
-        background-position: 0 100%
+        background-position: 50% 100%
     }
 
 .font-aharoni{
