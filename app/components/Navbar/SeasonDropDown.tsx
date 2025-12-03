@@ -27,10 +27,11 @@ export default function Menu() {
             <div className="sticky flex text-center justify-center items-center sm:justify-start sm:text-left text-lg font-bold">
                 {/* Dropdown button */}
                 <Link href="/teams/2026season" 
-                className="flex px-4
+                className="flex px-4 py-4
                          text-black dark:text-white
-                           transition duration-300 hover:not-md:text-2xl md:text-lg hover:md:underline hover:text-csg-red decoration-csg-red underline-offset-4">
-                           Season'26
+                           transition duration-300 hover:not-xl:text-2xl md:text-lg  hover:text-csg-red decoration-csg-red underline-offset-4">
+                           <span className='not-xl:hidden link-underline link-underline-csg-red'>Season'26</span>
+                           <span className='xl:hidden'>Season'26</span>
                 </Link>
                 <button
                     type="button"

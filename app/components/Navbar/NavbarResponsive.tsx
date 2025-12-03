@@ -39,10 +39,10 @@ const Navbar=()=>{
                                     href={option[1]}
                                     className="
                                             flex px-4 py-4 text-black text-center md:text-left text-lg dark:text-white
-                                            transition duration-300 hover:underline hover:text-csg-red decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
+                                            transition duration-300 hover:text-csg-red decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
                                     
-                                > 
-                                    {option[0]}
+                                > <span className='link-underline link-underline-csg-red'>{option[0]}</span>
+                                    
                                 </Link>
                                 )}      
                                 {option[0]==="CurrentSeason"&&(
