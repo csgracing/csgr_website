@@ -56,7 +56,10 @@ body {
     }
 
     .link-underline-csg-red {
-        background-image: linear-gradient(transparent, transparent), linear-gradient(#d00000,#d00000)
+        background-image: linear-gradient(transparent, transparent), linear-gradient(var(--color-csg-red),var(--color-csg-red))
+    }
+    .link-underline-blue-600 {
+        background-image: linear-gradient(transparent, transparent), linear-gradient(var(--color-blue-600),var(--color-blue-600))
     }
 
     .link-underline:hover {

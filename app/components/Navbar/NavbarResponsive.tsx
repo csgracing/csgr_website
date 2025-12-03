@@ -38,7 +38,7 @@ const Navbar=()=>{
                                 <Link
                                     href={option[1]}
                                     className="
-                                            flex px-4 py-4 text-black text-center md:text-left text-lg dark:text-white
+                                            flex px-3 py-4 text-black text-center md:text-left text-lg dark:text-white
                                             transition duration-300 not-xl:hover:text-csg-red decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
                                     
                                 > <span className='link-underline link-underline-csg-red px-1'>{option[0]}</span>
