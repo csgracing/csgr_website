@@ -22,12 +22,12 @@ export default function Menu() {
     
 
     return (
-        <div className=''>
+        <div className='overflow-hidden'>
             <div>
-            <div className="sticky flex text-center justify-center items-center sm:justify-start sm:text-left text-lg font-bold">
+            <div className="sticky flex text-center justify-center items-center sm:justify-start sm:text-left text-lg font-bold ">
                 {/* Dropdown button */}
                 <Link href="/teams/2026season" 
-                className="flex px-2 py-4
+                className="flex ps-4 py-4
                          text-black dark:text-white
                            transition duration-300 hover:not-xl:text-2xl md:text-lg not-xl:hover:text-csg-red decoration-csg-red underline-offset-4">
                            <span className='not-xl:hidden link-underline link-underline-csg-red px-1'>Season'26</span>

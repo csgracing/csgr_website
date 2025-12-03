@@ -70,3 +70,15 @@ body {
 .font-aharoni{
   font-family: "Aharoni Bold V1";
 }
+
+.text-slideIn {
+  animation: slideIn 0.5s linear;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
