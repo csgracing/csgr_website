@@ -39,7 +39,7 @@ const Navbar=()=>{
                                     href={option[1]}
                                     className="
                                             flex px-4 py-4 text-black text-center md:text-left text-lg dark:text-white
-                                            transition duration-300 hover:underline decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
+                                            transition duration-300 hover:underline hover:text-csg-red decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
                                     
                                 > 
                                     {option[0]}

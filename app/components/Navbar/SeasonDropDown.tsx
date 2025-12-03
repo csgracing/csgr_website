@@ -29,7 +29,7 @@ export default function Menu() {
                 <Link href="/teams/2026season" 
                 className="flex px-4
                          text-black dark:text-white
-                           transition duration-300 hover:not-md:text-2xl md:text-lg hover:md:underline decoration-csg-red underline-offset-4">
+                           transition duration-300 hover:not-md:text-2xl md:text-lg hover:md:underline hover:text-csg-red decoration-csg-red underline-offset-4">
                            Season'26
                 </Link>
                 <button
@@ -61,7 +61,7 @@ export default function Menu() {
                                     href={season[1]}
                                     className="flex px-4
                                             text-black text-center md:text-left dark:text-white
-                                            transition duration-300 hover:text-2xl font-bold text-lg justify-center md:justify-start"
+                                            transition duration-300 hover:text-2xl hover:text-csg-red font-bold text-lg justify-center md:justify-start"
                                     onClick={() => handleSelect(season[1])}
                                 >
                                     {season[0]}

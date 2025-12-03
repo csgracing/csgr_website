@@ -63,7 +63,7 @@ export default function Menu() {
                                     href={option[1]}
                                     className="
                                             flex px-4 py-4 text-black text-center sm:text-left dark:text-white
-                                            transition duration-300 hover:text-2xl font-bold justify-center sm:justify-start"
+                                            transition duration-300 hover:text-2xl hover:text-csg-red font-bold justify-center sm:justify-start"
                                     onClick={() => handleSelect(option[1])}
                                     
                                 > 
