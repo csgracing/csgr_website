@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 import graph from './teamMembers/Graph.png'
 const teamMembers = [
-  {Name: "Calum Breen-Chapman", Role: "Web Developer", Image:graph ,Department:"Software"},
-  {Name: "Calum Breen-Chapman", Role: "Web Developer", Image:graph ,Department:"Software"},
+  {Name: "Calum Breen-Chapman", Role: "Web Developer", Image:graph ,Department:"Software", desc:"Calum is a web developer responsible for designing and maintaining the team's website. He ensures that the site is user-friendly, visually appealing, and up-to-date with the latest information about the team and its activities."},
+  {Name: "Calum Breen-Chapman", Role: "Web Developer", Image:graph ,Department:"Software", desc:"Calum is a web developer responsible for designing and maintaining the team's website. He ensures that the site is user-friendly, visually appealing, and up-to-date with the latest information about the team and its activities."},
 ];
 
 const departments=[
@@ -35,6 +35,7 @@ export default function OurTeam() {
                 <h3 className='text-csg-red text-xl'>{member.Name}</h3>
                 <p className='text-lg'>{member.Department}</p>
                 <p>{member.Role}</p>
+                <p>{member.desc}</p>
               </div>
         </div>
       ))}
