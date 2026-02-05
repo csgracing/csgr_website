@@ -6,6 +6,7 @@ import MenuIcon from './menu.svg'
 import Cross from './cross.svg'
 import SeasonDropDown from './SeasonDropDown';
 import Link from 'next/link';
+import { pages } from './pages';
 
 export default function Menu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,17 +18,6 @@ export default function Menu() {
     const handleSelect = (option: SetStateAction<string>) => {
         setIsOpen(false);
     };
-    const options=[
-//      [Display Text, Link URL],
-        ["Our Team","/teams/ourTeam"],
-        ["CurrentSeason"],
-        ["Competition","/competition"],
-        ["Sponsors","/sponsors"],
-        ["Team History","/teams/teamHistory"],
-        ["Garage","/garage"],
-        ["Gallery","/gallery"],
-        ["Contact Us","/contactUs"],
-    ];
     
 
     return (
@@ -56,21 +46,21 @@ export default function Menu() {
                                     focus:outline-none
                                     ">
                         <div className="py-1">
-                            {options.map((option,index) => (
+                            {pages.map((page,index) => (
                             <div className='' key={index}>
-                                {option[0]!=="CurrentSeason"&&(
+                                {page.name!=="CurrentSeason"&&(
                                 <Link
-                                    href={option[1]}
+                                    href={page.link}
                                     className="
                                             flex px-4 py-4 text-black text-center sm:text-left dark:text-white
                                             transition duration-300 hover:text-2xl hover:text-csg-red font-bold justify-center sm:justify-start"
-                                    onClick={() => handleSelect(option[1])}
+                                    onClick={() => handleSelect(page.link)}
                                     
                                 > 
-                                    {option[0]}
+                                    {page.name}
                                 </Link>
                                 )}      
-                                {option[0]==="CurrentSeason"&&(
+                                {page.name==="CurrentSeason"&&(
                                     <div className=''>
                                         <SeasonDropDown/>
                                     </div>

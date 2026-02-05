@@ -4,18 +4,10 @@ import { FacebookLogo,InstaLogo,TiktokLogo,LinkedinLogo } from '../images/logos/
 import CsgrLogoLight from '../images/logos/csgr_logos/csgrLight.svg'
 import SeasonDropDown from './SeasonDropDown';
 import Menu from './Menu'
+import { pages } from './pages';
 
 const Navbar=()=>{
-    const options=[
-//      [Display Text, Link URL],
-        ["Our Team","/teams/ourTeam"],
-        ["CurrentSeason"],
-        ["Competition","/competition"],
-        ["Sponsors","/sponsors"],
-        ["Team History","/teams/teamHistory"],
-        ["Gallery","/gallery"],
-        ["Contact Us","/contactUs"],
-    ];
+    
     return (
         <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-white dark:bg-black uppercase'>
             {/*mobile menu*/}
@@ -32,20 +24,20 @@ const Navbar=()=>{
             
             <div className='flex gap-1 not-xl:hidden'>
                 
-                {options.map((option,index) => (
+                {pages.map((page,index) => (
                             <div className='' key={index}>
-                                {option[0]!=="CurrentSeason"&&(
+                                {page.name!=="CurrentSeason"&&(
                                 <Link
-                                    href={option[1]}
+                                    href={page.link}
                                     className="
                                             flex px-3 py-4 text-black text-center md:text-left text-lg dark:text-white
                                             transition duration-300 not-xl:hover:text-csg-red decoration-csg-red underline-offset-4 font-bold justify-center md:justify-start"
                                     
-                                > <span className='link-underline link-underline-csg-red px-1'>{option[0]}</span>
+                                > <span className='link-underline link-underline-csg-red px-1'>{page.name}</span>
                                     
                                 </Link>
                                 )}      
-                                {option[0]==="CurrentSeason"&&(
+                                {page.name==="CurrentSeason"&&(
                                     <div className=''>
                                         <SeasonDropDown/>
                                     </div>

@@ -2,6 +2,7 @@
 import {SetStateAction,useState } from 'react';
 import DropDownArrow from './dropdownArrow.svg';
 import Link from 'next/link';
+import { seasons } from './pages';
 
 export default function Menu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +14,7 @@ export default function Menu() {
     const handleSelect = (option: SetStateAction<string>) => {
         setIsOpen(false);
     };
-    const seasons=[
-        ["Season'25","/teams/2025season"],
-        ["Season'18","/teams/2018season"],
-        ["Season'17","/teams/2017season"],
-        ["Season'16","/teams/2016season"],
-    ];
+
     
 
     return (
@@ -59,13 +55,13 @@ export default function Menu() {
                             {seasons.map((season,index) => (
                             <div key={index}>
                                 <Link
-                                    href={season[1]}
+                                    href={season.link}
                                     className="flex px-4
                                             text-black text-center md:text-left dark:text-white
                                             transition duration-300 hover:text-2xl hover:text-csg-red font-bold text-lg justify-center md:justify-start"
-                                    onClick={() => handleSelect(season[1])}
+                                    onClick={() => handleSelect(season.link)}
                                 >
-                                    {season[0]}
+                                    {season.year}
                                 </Link>
                             </div>
                             ))}
