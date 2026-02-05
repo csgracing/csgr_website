@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='font-aharoni antialiased'
+        className='antialiased'
       >
         <link
         rel="apple-touch-icon"
