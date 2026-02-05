@@ -12,7 +12,13 @@ const teamMembers = [
   {Name: "Calum Breen-Chapman", Role: "Web Developer", Image:graph ,Department:"Software"},
 ];
 
-const departments=["Team Leads","Software","Mechanical","Electrical","Aerodynamics"]
+const departments=[
+  {id:"TL", name:"Team Leads"},
+  {id:"SW", name:"Software"},
+  {id:"ME", name:"Mechanical"},
+  {id:"EV", name:"Electrical"},
+  {id:"AE", name:"Aerodynamics"}
+];
 
 
 export default function OurTeam() {
@@ -20,7 +26,7 @@ export default function OurTeam() {
     <div>
       <h1 className='text-4xl text-csg-red font-bold text-center my-5'>Our Team</h1>
       <div className='flex justify-center gap-5'>
-      {departments.map((department,index)=><button key={index} className=' text-2xl rounded-3xl p-1 bg-csg-red text-white font-bold text-center my-5 hover:bg-csg-light-gray transition duration-500'>{department}</button>)}
+      {departments.map((department,index)=><button key={index} className=' text-2xl rounded-3xl p-1 bg-csg-red text-white font-bold text-center my-5 hover:bg-csg-light-gray transition duration-500'>{department.name}</button>)}
       </div>
       <div className='grid grid-cols-4 gap-5'>
         {teamMembers.map((member) => ( 
