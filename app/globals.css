@@ -17,6 +17,7 @@
     --color-csg-light-gray: #7D7C7C;
     --color-csg-dark-gray:#434343;
     --color-csg-red: #D00000;
+    --color-csg-light-red: #FF3a5d;
 }
 
 @media (prefers-color-scheme: dark) {
