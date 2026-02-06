@@ -31,7 +31,7 @@ export default function Home() {
             </ul>
         </ul>
       </div>
-      <div className='py-2 text-center bg-white dark:bg-black border-csg-red border-t-4 border-b-4'>
+      <div className='py-2 text-center bg-black border-csg-red border-t-4 border-b-4'>
       <h1 className='text-3xl text-csg-red font-mono font-extrabold py-1'>Check Us Out On Instagram <a href='https://www.instagram.com/csg.racing/' className=" text-blue-600 text-4xl link-underline link-underline-blue-600 py-1">@csg.racing</a></h1>
       <iframe src="https://widget.taggbox.com/308607?website=1" className="w-full h-130 md:h-70"/>
       </div>
@@ -49,7 +49,7 @@ export default function Home() {
         <br/>
         <div className='justify-center flex'>
           <a href="https://www.imeche.org/events/formula-student" className='justify-center flex m-5'>
-            <p className='p-2 align-center bg-csg-red inline text-white rounded-lg text-center text-xl transition duration 300 hover:scale-120'>Learn More</p>
+            <p className='p-2 align-center bg-csg-red inline  rounded-lg text-center text-xl transition duration 300 hover:scale-120'>Learn More</p>
           </a>
         </div>
       </ul>

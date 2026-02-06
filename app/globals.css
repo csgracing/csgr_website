@@ -3,8 +3,8 @@
 
 
 :root {
-  --background: #eedeeb;
-  --foreground: #000000;
+  --background: #222222;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -20,12 +20,6 @@
     --color-csg-light-red: #FF3a5d;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #222222;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);

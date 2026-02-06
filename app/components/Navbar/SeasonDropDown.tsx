@@ -24,7 +24,6 @@ export default function Menu() {
                 {/* Dropdown button */}
                 <Link href="/teams/2026season" 
                 className="flex ps-4 py-4
-                         text-black dark:text-white
                            transition duration-300 hover:not-xl:text-2xl md:text-lg not-xl:hover:text-csg-red decoration-csg-red underline-offset-4">
                            <span className='not-xl:hidden link-underline link-underline-csg-red px-1'>Season'26</span>
                            <span className='xl:hidden'>Season'26</span>
@@ -35,10 +34,10 @@ export default function Menu() {
                     onClick={toggleDropdown}
                 >
                 {isOpen &&(
-                <DropDownArrow className='w-15 stroke-csg-red fill-white dark:fill-black rotate-180 hover:scale-115 transition duration-300'/>
+                <DropDownArrow className='w-15 stroke-csg-red fill-black rotate-180 hover:scale-115 transition duration-300'/>
                 )}
                 {!isOpen &&(
-                <DropDownArrow className='h-15 stroke-csg-red fill-white dark:fill-black hover:scale-115 transition duration-300'/>
+                <DropDownArrow className='h-15 stroke-csg-red fill-black hover:scale-115 transition duration-300'/>
                 )}
                 </button>
                 </div>
@@ -48,7 +47,7 @@ export default function Menu() {
 
                     <div className="origin-bottom-left relative md:absolute
                                     w-full md:w-45
-                                    bg-white dark:bg-black border-b-3 rounded-xl border-3  border-csg-red
+                                    bg-black border-b-3 rounded-xl border-3  border-csg-red
                                     focus:outline-none
                                     ">
                         <div className="">
@@ -57,7 +56,7 @@ export default function Menu() {
                                 <Link
                                     href={season.link}
                                     className="flex px-4
-                                            text-black text-center md:text-left dark:text-white
+                                            text-center md:text-left 
                                             transition duration-300 hover:text-2xl hover:text-csg-red font-bold text-lg justify-center md:justify-start"
                                     onClick={() => handleSelect(season.link)}
                                 >
