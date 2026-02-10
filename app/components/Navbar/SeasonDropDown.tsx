@@ -24,7 +24,7 @@ export default function Menu() {
             <div>
             <div className="sticky flex text-center justify-center items-center sm:justify-start sm:text-left text-lg font-bold ">
                 {/* Dropdown button */}
-                <Link href={selectedOption.link} 
+                <Link href={`/teams/${selectedOption.link}`} 
                 className="flex ps-4 py-4
                            transition duration-300 hover:not-xl:text-2xl md:text-lg not-xl:hover:text-csg-red decoration-csg-red underline-offset-4">
                            <span className='not-xl:hidden link-underline link-underline-csg-red px-1'>{selectedOption.year}</span>
