@@ -12,7 +12,7 @@ export default function Menu() {
         setIsOpen(!isOpen);
     };
 
-    const handleSelect = (option) => {
+    const handleSelect = (option: SetStateAction<{ year: string; link: string; }>) => {
         setSelectedOption(option);
         setIsOpen(false);
     };
