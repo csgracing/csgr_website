@@ -57,7 +57,7 @@ export default function Menu() {
                             <div key={index}>
                                 {season !== selectedOption && (
                                 <Link
-                                    href={season.link}
+                                    href={`/teams/${season.link}`}
                                     className="flex px-4
                                             text-center md:text-left 
                                             transition duration-300 hover:text-2xl hover:text-csg-red font-bold text-lg justify-center md:justify-start"
