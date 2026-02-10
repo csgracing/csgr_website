@@ -9,6 +9,7 @@
     ];
 
     export const seasons = [
+        { year: "Season'26", link: "/teams/2026season" },
         { year: "Season'25", link: "/teams/2025season" },
         { year: "Season'18", link: "/teams/2018season" },
         { year: "Season'17", link: "/teams/2017season" },

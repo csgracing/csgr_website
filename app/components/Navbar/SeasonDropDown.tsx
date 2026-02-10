@@ -6,12 +6,14 @@ import { seasons } from './pages';
 
 export default function Menu() {
     const [isOpen, setIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(seasons[0]);
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
 
-    const handleSelect = (option: SetStateAction<string>) => {
+    const handleSelect = (option) => {
+        setSelectedOption(option);
         setIsOpen(false);
     };
 
@@ -22,11 +24,11 @@ export default function Menu() {
             <div>
             <div className="sticky flex text-center justify-center items-center sm:justify-start sm:text-left text-lg font-bold ">
                 {/* Dropdown button */}
-                <Link href="/teams/2026season" 
+                <Link href={selectedOption.link} 
                 className="flex ps-4 py-4
                            transition duration-300 hover:not-xl:text-2xl md:text-lg not-xl:hover:text-csg-red decoration-csg-red underline-offset-4">
-                           <span className='not-xl:hidden link-underline link-underline-csg-red px-1'>Season'26</span>
-                           <span className='xl:hidden'>Season'26</span>
+                           <span className='not-xl:hidden link-underline link-underline-csg-red px-1'>{selectedOption.year}</span>
+                           <span className='xl:hidden'>{selectedOption.year}</span>
                 </Link>
                 <button
                     type="button"
@@ -53,15 +55,17 @@ export default function Menu() {
                         <div className="">
                             {seasons.map((season,index) => (
                             <div key={index}>
+                                {season !== selectedOption && (
                                 <Link
                                     href={season.link}
                                     className="flex px-4
                                             text-center md:text-left 
                                             transition duration-300 hover:text-2xl hover:text-csg-red font-bold text-lg justify-center md:justify-start"
-                                    onClick={() => handleSelect(season.link)}
+                                    onClick={() => handleSelect(season)}
                                 >
                                     {season.year}
                                 </Link>
+                                )}
                             </div>
                             ))}
                         </div>
