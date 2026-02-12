@@ -19,8 +19,8 @@ function handleSelect(option: string){
 
   return (
     <div>
-      <div className='flex flex-wrap justify-center items-center gap-5 '>
-      {departments.map((department,index)=><button key={index} onClick={()=>handleSelect(department.id)} className={'text-lg border-2 lg:text-2xl xl:text-3xl rounded-4xl p-2 font-bold text-center my-5 hover:bg-csg-red hover:opacity-100 bg-csg-red opacity-65'+ (Selected===department.id ? "opacity-100" : "") +' transition duration-500'}>{department.name}</button>)}
+      <div className='flex flex-wrap justify-center items-center gap-5 xl:px-60 '>
+      {departments.map((department,index)=><button key={index} onClick={()=>handleSelect(department.id)} className={'text-lg border-2 lg:text-xl xl:text-2xl rounded-4xl p-2 font-bold text-center my-5 hover:bg-csg-red hover:opacity-100 bg-csg-red opacity-65'+ (Selected===department.id ? "opacity-100" : "") +' transition duration-500'}>{department.name}</button>)}
       </div>
       <div className='sm:grid sm:grid-cols-2 xl:grid-cols-4 justify-center gap-5'>
         {teamMembers.map((member) => ( 
