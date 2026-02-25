@@ -24,7 +24,7 @@ const Navbar=()=>{
                 
                 {pages.map((page,index) => (
                             <div className='' key={index}>
-                                {page.name!=="CurrentSeason"&&page.live&&(
+                                {page.name!=="CurrentSeason"&&(page.live||process.env.NODE_ENV === "development")&&(
                                 <Link
                                     href={page.link}
                                     className="
@@ -35,7 +35,7 @@ const Navbar=()=>{
                                     
                                 </Link>
                                 )}      
-                                {page.name==="CurrentSeason"&&page.live&&(
+                                {page.name==="CurrentSeason"&&(page.live||process.env.NODE_ENV === "development")&&(
                                     <div className=''>
                                         <SeasonDropDown/>
                                     </div>
