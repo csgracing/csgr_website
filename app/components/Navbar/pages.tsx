@@ -1,11 +1,11 @@
 
     export const pages = [
-        { name: "Our Team", link: "/teams/ourTeam" },
-        { name: "CurrentSeason", link: "" },
-        { name: "Sponsors", link: "/sponsors" },
-        { name: "Team History", link: "/teams/teamHistory" },
-        { name: "Gallery", link: "/gallery" },
-        { name: "Contact Us", link: "/contactUs" },
+        { name: "Our Team", link: "/teams/ourTeam", live: true },
+        { name: "CurrentSeason", link: "", live: false },
+        { name: "Sponsors", link: "/sponsors", live: true },
+        { name: "Team History", link: "/teams/teamHistory", live: false },
+        { name: "Gallery", link: "/gallery", live: false },
+        { name: "Contact Us", link: "/contactUs", live: false },
     ];
 
     export const seasons = [

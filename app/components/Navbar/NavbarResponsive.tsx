@@ -11,22 +11,20 @@ const Navbar=()=>{
     return (
         <nav className='sticky z-1 top-0 w-full flex items-center justify-between border-b-3 border-csg-red bg-black uppercase'>
             {/*mobile menu*/}
-            {process.env.NODE_ENV === "development"&&(
                 <div className='xl:hidden'>
                         <Menu/>
                 </div>
-            )}
             <Link href="/" className='transition duration-300 hover:scale-120'>
                 <CsgrLogoLight className='w-40 h-25 mx-5 fill-white flex'/>
             </Link>
             {/*desktop menu*/}
-            {process.env.NODE_ENV === "development"&&(
+            
             
             <div className='flex gap-1 not-xl:hidden'>
                 
                 {pages.map((page,index) => (
                             <div className='' key={index}>
-                                {page.name!=="CurrentSeason"&&(
+                                {page.name!=="CurrentSeason"&&page.live&&(
                                 <Link
                                     href={page.link}
                                     className="
@@ -37,7 +35,7 @@ const Navbar=()=>{
                                     
                                 </Link>
                                 )}      
-                                {page.name==="CurrentSeason"&&(
+                                {page.name==="CurrentSeason"&&page.live&&(
                                     <div className=''>
                                         <SeasonDropDown/>
                                     </div>
@@ -45,7 +43,6 @@ const Navbar=()=>{
                             </div>
                             ))}
             </div>
-        )}
             <ul className='flex gap-2 not-2xl:hidden mx-5'>
                 {/*desktop socials*/}
                 <a href='https://www.instagram.com/csg.racing/'>

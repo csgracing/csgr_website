@@ -48,7 +48,7 @@ export default function Menu() {
                         <div className="py-1">
                             {pages.map((page,index) => (
                             <div className='' key={index}>
-                                {page.name!=="CurrentSeason"&&(
+                                {page.name!=="CurrentSeason"&&page.live&&(
                                 <Link
                                     href={page.link}
                                     className="
@@ -60,7 +60,7 @@ export default function Menu() {
                                     {page.name}
                                 </Link>
                                 )}      
-                                {page.name==="CurrentSeason"&&(
+                                {page.name==="CurrentSeason"&&page.live&&(
                                     <div className=''>
                                         <SeasonDropDown/>
                                     </div>
