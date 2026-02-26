@@ -21,8 +21,8 @@ const SponsorGrid = () => {
     return(
         <div className='md:grid grid-cols-2 xl:grid-cols-3 justify-center items-center gap-4 px-2 py-2'>
         {SponsorCarouselLogos.map((Logo, index) => (
-        <div className='py-2'>
-          <div key={index} className='flex flex-col justify-center bg-black overflow-x-hidden border-4 rounded-2xl border-csg-red h-100 text-center items-center p-4 gap-4' onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={handleMouseLeave}>
+        <div key={index} className='py-2'>
+          <div className='flex flex-col justify-center bg-black overflow-x-hidden border-4 rounded-2xl border-csg-red h-100 text-center items-center p-4 gap-4' onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={handleMouseLeave}>
             <a href={Logo.link}>
               <Logo.src className='w-full py-2 px-2 fill-white hover:scale-110 transition duration-300'/>
             </a>
