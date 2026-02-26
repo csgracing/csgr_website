@@ -19,7 +19,7 @@ export default function Home() {
             <h1 className='text-3xl text-csg-red font-mono font-extrabold'>City St Georges Racing Driving Innovation</h1>
             <ul className='list-disc text-lg mx-6'>
               <li>
-                City St George’s Racing involves students from various disciplines across City St George’s University of London, to build a single seater car and compete in the annual competition, Formula Student UK held at Silverstone, one of the most famous race tracks in the world.</li>
+                City St George's Racing involves students from various disciplines across City St George's University of London, to build a single seater car and compete in the annual competition, Formula Student UK held at Silverstone, one of the most famous race tracks in the world.</li>
               <br/>
               <li>
                 CSG Racing is working towards developing an electric vehicle for formula student UK. In 2025 we reentered the competition through the concept class, building the foundations for future years.</li>
@@ -39,13 +39,13 @@ export default function Home() {
       <ul className='text-lg xl:w-1/2'>
         <h1 className='text-3xl text-csg-red font-mono font-extrabold'>About the competition</h1>
         <li>
-          Formula Student UK is an annual engineering competition run by the Institution of Mechanical Engineers (IMechE), where student teams design, build, and race their own prototype single-seater cars. The event combines static events including engineering design, cost and manufacturing analysis, and a business presentation with dynamic events such as acceleration, skid-pad, autocross, and a long-distance endurance race.        </li>
+          Formula Student UK is an annual engineering competition run by the Institution of Mechanical Engineers (IMechE), where student teams design, build, and race their own prototype single-seater cars. The event combines static events including engineering design, cost and manufacturing analysis, and a business presentation with dynamic events such as acceleration, skid-pad, autocross, and a long-distance endurance race.</li>
         <br/>
         <li>
-          Teams can enter one of several classes: the main Formula Student class (which includes internal combustion, electric, and hybrid vehicles), the FS-AI class for autonomous cars, and the Concept Class for design-only entries. The 2026 season continues to encourage innovation, offering financial awards to help teams develop their cars and refine their engineering approach.        </li>
+          Teams can enter one of several classes: the main Formula Student class (which includes internal combustion, electric, and hybrid vehicles), the FS-AI class for autonomous cars, and the Concept Class for design-only entries. The 2026 season continues to encourage innovation, offering financial awards to help teams develop their cars and refine their engineering approach.</li>
         <br/>
         <li>
-          Beyond the competition itself, Formula Student aims to give participants real-world engineering experience. Students gain hands-on skills in design, manufacturing, testing, project management, teamwork, and budgeting, making the event a major stepping stone into motorsport, automotive engineering, and wider STEM careers.        </li>
+          Beyond the competition itself, Formula Student aims to give participants real-world engineering experience. Students gain hands-on skills in design, manufacturing, testing, project management, teamwork, and budgeting, making the event a major stepping stone into motorsport, automotive engineering, and wider STEM careers.</li>
         <br/>
         <div className='justify-center flex'>
           <a href="https://www.imeche.org/events/formula-student" className='justify-center flex m-5'>
