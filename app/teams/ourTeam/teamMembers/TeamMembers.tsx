@@ -1,7 +1,19 @@
 import PlaceHolder from './placeholder.png'
 
 export const teamMembers = [
-  {id:1, Name: "Calum Breen-Chapman", Role: "Web Developer", Image:PlaceHolder ,Department:"Software", tag:["SW"], desc:"Calum is a web developer responsible for designing and maintaining the team's website. He ensures that the site is user-friendly, visually appealing, and up-to-date with the latest information about the team and its activities."},
+  { Name: "Blessing Emmanuel", Department:"Software",
+    Role: "", 
+    Image:PlaceHolder ,
+    tag:["TL","SW"],
+    desc:""
+  },
+  { Name: "Calum Breen-Chapman", Department:"Software",
+    Role: "Web Developer", 
+    Image:PlaceHolder ,
+    tag:["SW"],
+    desc:""
+},
+  
 ];
 
 export const departments=[

@@ -24,9 +24,9 @@ function handleSelect(option: string){
       </div>
       <div className='sm:grid sm:grid-cols-2 xl:grid-cols-4 justify-center gap-5'>
         {teamMembers.map((member) => ( 
-          <div key={member.id} className=''>
+          <div key={member.Name} className=''>
           {(Selected === "All" || member.tag.includes(Selected)) && (<div className='bg-black border-3 border-csg-red rounded-xl flex flex-col items-center justify-center text-center'>
-          <Image className='my-2' src={member.Image} alt={member.Name} width={200} height={300} />
+          <Image className='my-2' src={member.Image} alt={member.Name} width={250} height={250} />
             <div className='my-2'>
                 <h3 className='text-csg-red text-2xl'>{member.Name}</h3>
                 <p className='text-lg'>{member.Department+(member.tag.includes('TL') ? " Team Lead" : "")}</p>
