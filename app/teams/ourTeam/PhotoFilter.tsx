@@ -7,7 +7,7 @@ import {teamMembers,departments} from './teamMembers/TeamMembers'
 export default function PhotoFilter() {
 
 const [Selected, setSelected] = React.useState("All");
-function handleSelect(option: string){
+function handleSelect(option: React.SetStateAction<string>){
   if(Selected===option){
     setSelected("All");
     
@@ -28,9 +28,8 @@ function handleSelect(option: string){
           {(Selected === "All" || member.tag.includes(Selected)) && (<div className='bg-black border-3 border-csg-red rounded-xl flex flex-col items-center justify-center text-center'>
           <Image className='my-2' src={member.Image} alt={member.Name} width={250} height={250} />
             <div className='my-2'>
-                <h3 className='text-csg-red text-2xl'>{member.Name}</h3>
-                <p className='text-lg'>{member.Department+(member.tag.includes('TL') ? " Team Lead" : "")}</p>
-                <p>{member.Role}</p>
+                <h3 className='text-csg-red text-2xl'>{member.Name}<br/>{(member.tag.includes("TP")) ? "Team Principal" : ""}</h3>
+                <p className='text-lg'>{member.role}</p>
                 <p>{member.desc}</p>
               </div>
               </div>
