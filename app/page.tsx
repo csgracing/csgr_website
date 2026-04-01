@@ -53,7 +53,7 @@ export default function Home() {
           </a>
         </div>
       </ul>
-      <Image src={Graph} alt="" height={800} width={800} className='bg-white aspect-video border-5 w-full xl:w-1/2 object-scale-down  border-csg-red rounded-2xl'/>
+      <Image src={Graph} alt="" height={800} width={800} className='bg-black aspect-video border-5 w-full xl:w-1/2 object-scale-down  border-csg-red rounded-2xl'/>
      </div>   
      <div>
       <SponsorCarousel/>
