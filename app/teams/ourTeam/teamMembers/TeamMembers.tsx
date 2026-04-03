@@ -1,9 +1,19 @@
 import PlaceHolder from './placeholder.png'
+import Ubhay from './photos/Ubhay.jpg'
+import Bilal from './photos/Bilal.jpg'
+import Daniel from './photos/Daniel.jpg'
+import Blessing from './photos/Blessing.jpg'
+import Estella from './photos/Estella.jpg'
+import James from './photos/James.jpg'
+import Lorenzo from './photos/Lorenzo.jpg'
+import Manuela from './photos/Manuela.jpg'
+import Raidah from './photos/Raidah.jpg'
+import Tamjeed from './photos/Tamjeed.jpg'
 
 export const teamMembers = [
   //Team Leads
   {Name:"Ubhay Ahmed", role:"Head of Electrical Systems",
-    Image:PlaceHolder,
+    Image:Ubhay,
     tag:["TP","TL","EV"],
     desc:""
   },
@@ -13,23 +23,23 @@ export const teamMembers = [
     desc:""
   },
   {Name:"Daniel Ronnau-Bradbeer", role:"Chassis Team Lead",
-    Image:PlaceHolder,
+    Image:Daniel,
     tag:["TL","ME"],
     desc:""
   },
   {Name:"Muhammad Bilal", role:"Powertrain Team Lead",
-    Image:PlaceHolder,
+    Image:Bilal,
     tag:["TL","ME"],
     desc:""
   },
   {Name:"Lorenzo Donati", role:"SSB Team Lead", 
-    Image:PlaceHolder,
+    Image:Lorenzo,
     tag:["TL","ME"],
     desc:""
   },
   { Name: "Blessing Emmanuel", role:"Head Of Software",
     Role: "", 
-    Image:PlaceHolder ,
+    Image:Blessing ,
     tag:["TL","SW"],
     desc:""
   },
@@ -44,17 +54,17 @@ export const teamMembers = [
     desc:""
   },
   {Name:"Estella Threadwell", role:"Head Of Opperations",
-    Image:PlaceHolder,
+    Image:Estella,
     tag:["TL","OP"],
     desc:""
   },
   {Name:"Raidah Khan", role:"Administrative Coordinator",
-    Image:PlaceHolder,
+    Image:Raidah,
     tag:["TL","OP"],
     desc:""
   }
   ,{Name:"Manuela Blazquez Barrero", role:"Media & Marketing Team Lead",
-    Image:PlaceHolder,
+    Image:Manuela,
     tag:["TL","OP"],
     desc:""
   },
